@@ -10,6 +10,8 @@ extern void open_file(char *filename);
 int line_number = 1; // Line counter
 %}
 
+%option yylineno
+
 %%
 "else"      { printf("ELSE "); return ELSE; }
 "if"        { printf("IF "); return IF; }
